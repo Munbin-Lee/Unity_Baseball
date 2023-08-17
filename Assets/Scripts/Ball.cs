@@ -53,7 +53,7 @@ public class Ball : MonoBehaviour
         Debug.Log("Fuck");
         if (Money < MoneyUpgrade) return;
         Money -= MoneyUpgrade;
-        Scale += 0.1f;
+        Scale *= 1.1f;
         MoneyUpgrade *= 1.1f;
         RefreshMoneyUI();
         RefreshUpgradeUI();
@@ -73,7 +73,7 @@ public class Ball : MonoBehaviour
     {
         if (Money < GapUpgrade) return;
         Money -= GapUpgrade;
-        AllowdGap += 0.1f;
+        AllowdGap *= 1.1f;
         GapUpgrade *= 1.1f;
         RefreshMoneyUI();
         RefreshUpgradeUI();
